@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar px-4 d-flex align-items-center justify-content-start">
+    <div class="ml-5">
+    <a class="" href="Homepage.html">Post your product</a>        
+    </div>
+</nav>
+<br>
+<br>
+<br>
+  <div class="container">
+        <div class="title">Post new product</div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Name</span>
+                <input id="name-input" type="text" placeholder="name..." required>
+              </div>
+              <div class="input-box">
+                <span class="details">Description</span>
+                <input id="description-input" type="text" placeholder="description..." required>
+              </div>
+              <div class="input-box">
+                <span class="details">Brand</span>
+                <input id="brand-input" type="text" placeholder="brand..." required>
+              </div>
+              <div class="input-box">
+                <span class="details">Image</span>
+                <input id="image-input" type="text" placeholder="image url..." required>
+              </div>
+              <div class="input-box">
+                <span class="details">Price</span>
+                <input id="price-input" type="text" placeholder="price..." required>
+              </div>
+            </div>
+            
+            <div class="button">
+              <input type="button" value="Post" onclick="postProduct()">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <script src="scriptpost.js"></script>
+</body>
+</html>
