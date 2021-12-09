@@ -19,14 +19,16 @@
     width: 100%;
 }
 
-a {
+nav > a {
     text-decoration: none;
-    color: rgba(254, 254, 255, 0.5) !important;
+    color: rgba(254, 254, 255, 0.377) !important;
     margin-right: 60px;
     font-size: 13px;
 }
 
-a:hover {
+nav > a  {
     text-decoration: underline;
     color: white !important;
 }
+
+

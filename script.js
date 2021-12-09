@@ -23,7 +23,7 @@ function displayproducts(products) {
                           
                           <span>${product.brand}</span>
                           <span>${product.price}€</span>
-                                            
+                          <span><a href="./postpage.html?id=${product._id}">Edit</a></span>           
                       </div>
                       </div>
                       </div>
@@ -59,6 +59,7 @@ const getproducts = async () => {
   
 window.onload = async () => {
    await getproducts()
+   
 };
 
 
