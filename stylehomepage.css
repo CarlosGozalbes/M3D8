@@ -19,16 +19,20 @@
     width: 100%;
 }
 
-nav > a {
+.internal-link {
     text-decoration: none;
-    color: rgba(254, 254, 255, 0.377) !important;
+    color: rgb(108 117 125) !important;
     margin-right: 60px;
     font-size: 13px;
 }
 
-nav > a  {
+.internal-link:hover  {
     text-decoration: underline;
-    color: white !important;
+    color: #b8b811 !important;
+}
+
+#card-info > span> a {
+    margin-right: 0;
 }
 
 

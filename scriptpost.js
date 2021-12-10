@@ -84,8 +84,7 @@ const deleteproduct = async () => {
     method: 'DELETE',   
     headers:  {
         "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWIwYWU5ZjRjZmY1ZjAwMTU5MGJkYjAiLCJpYXQiOjE2Mzg5Njg5OTIsImV4cCI6MTY0MDE3ODU5Mn0.GCy-MTuNh6IsfcfFG90Jt2Hw_g4dGbNBBfCDM3D9MQ0",
-        "Content-Type": "application/json"
-    } 
+            } 
     })
             if (response.ok) {
                 const deletedObj = await response.json()
@@ -115,7 +114,7 @@ window.onload = async () => {
     })
     const productDetails = document.getElementById("product-details")
     
-    if (response.ok) {
+    if (response.ok && productId) {
         const product = await response.json()
 
         
